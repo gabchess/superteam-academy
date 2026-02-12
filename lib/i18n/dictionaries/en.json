@@ -18,7 +18,13 @@
     "level": "Level",
     "streak": "Streak",
     "lessons": "Lessons",
-    "module": "Module"
+    "module": "Module",
+    "user": "User"
+  },
+  "auth": {
+    "google": "Google",
+    "github": "GitHub",
+    "link": "Link"
   },
   "header": {
     "courses": "Courses",
@@ -77,5 +83,36 @@
     "currentCourses": "Current courses",
     "achievements": "Achievements",
     "streakCalendar": "Streak calendar"
+  },
+  "profile": {
+    "title": "Profile",
+    "credentials": "Credentials",
+    "completedCourses": "Completed courses",
+    "skills": "Skill radar"
+  },
+  "leaderboard": {
+    "title": "Leaderboard",
+    "subtitle": "Top builders ranked by XP.",
+    "weekly": "Weekly",
+    "monthly": "Monthly",
+    "alltime": "All-time"
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Manage your account preferences and privacy.",
+    "profile": "Profile",
+    "accountLinking": "Account linking",
+    "privacy": "Privacy",
+    "displayName": "Display name",
+    "bio": "Bio",
+    "save": "Save changes",
+    "publicProfile": "Public profile"
+  },
+  "certificate": {
+    "title": "Certificate",
+    "verifyOnChain": "Verify on-chain",
+    "share": "Share",
+    "credentialTitle": "Superteam Academy Credential",
+    "issuedOnDevnet": "Issued on Devnet"
   }
 }

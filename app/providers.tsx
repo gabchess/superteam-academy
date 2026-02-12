@@ -4,9 +4,8 @@ import { useMemo, type ReactNode } from "react";
 import { ThemeProvider } from "next-themes";
 import { ConnectionProvider, WalletProvider } from "@solana/wallet-adapter-react";
 import { WalletModalProvider } from "@solana/wallet-adapter-react-ui";
-import { PhantomWalletAdapter, SolflareWalletAdapter } from "@solana/wallet-adapter-wallets";
 import { I18nProvider } from "@/lib/i18n/provider";
-import { getSolanaEndpoint } from "@/lib/solana/wallet";
+import { getSolanaEndpoint, getWalletAdapters } from "@/lib/solana/wallet";
 
 type ProvidersProps = {
   children: ReactNode;
@@ -14,7 +13,7 @@ type ProvidersProps = {
 
 export function Providers({ children }: ProvidersProps): JSX.Element {
   const endpoint = getSolanaEndpoint();
-  const wallets = useMemo(() => [new PhantomWalletAdapter(), new SolflareWalletAdapter()], []);
+  const wallets = useMemo(() => getWalletAdapters(), []);
 
   return (
     <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
