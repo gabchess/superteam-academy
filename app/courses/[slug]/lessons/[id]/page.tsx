@@ -66,7 +66,7 @@ export default function LessonPage({ params }: LessonPageProps): JSX.Element {
       </section>
 
       <section>
-        <ChallengePanel />
+        <ChallengePanel challengePrompt={lesson.challengePrompt} />
       </section>
     </div>
   );
